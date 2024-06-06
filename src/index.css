@@ -1,0 +1,167 @@
+:root {
+  --primary: #812626;
+  --secondary: #661818;
+  --tertiary: rgb(137, 40, 40);
+  --background: #eff0f0;
+  --text-white: #ffffff;
+  --background-glass: #ffffffa6;
+  --border-glass: #b97070a6;
+  --background-gray: #d1c0c0;
+  --text-black: #000000;
+  --error: #d40e20;
+  --success: #38c521;
+  --info: #4369e2;
+  --warn: #ffbb00;
+  --raddi-sm: 5px;
+  --raddi-md: 10px;
+  --raddi-lg: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+
+body,
+html {
+  background-image: url(../public/bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+.custom-section {
+  background-color: #ffffff5f;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: var(--raddi-lg);
+  button {
+    color: var(--secondary);
+    font-weight: 550;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  max-width: 800px !important;
+  border-radius: var(--raddi-lg) !important;
+  /* background-color: var(--background-glass) !important; */
+  button {
+    border-color: var(--primary) !important;
+  }
+}
+
+.glass-background {
+  background-color: var(--background);
+  box-shadow: 5px 8px 4px -4px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  color: var(--primary) !important;
+  position: relative;
+  color: var(--primary);
+  animation: 0.2s ativando both ease-in-out;
+  svg {
+    border: solid var(--primary) 6px;
+    background-color: var(--background);
+    border-radius: 50%;
+  }
+}
+
+.back-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-self: start;
+  align-self: flex-start;
+  margin: 0.5rem 0 1rem 0 !important;
+  text-align: start;
+  color: var(--primary);
+
+  svg {
+    color: var(--primary);
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+}
+
+button {
+  border-radius: var(--raddi-md) !important;
+}
+
+@keyframes ativando {
+  from {
+    top: 0;
+    transform: scale(1);
+  }
+  to {
+    top: -20px;
+    transform: scale(1.2);
+    width: 60px;
+    height: 60px;
+  }
+}
+@keyframes ativandoMenor {
+  from {
+    top: 0;
+    transform: scale(1);
+  }
+  to {
+    top: -15px;
+    transform: scale(1.2);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 340px) {
+  .active {
+    animation: 0.2s ativandoMenor both ease-in-out;
+
+    svg {
+      border: solid var(--primary) 5px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  body,
+  html {
+    background-image: url(../public/bg-tablet.png);
+    background-size: cover;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  body,
+  html {
+    background-image: url(../public/wallpaper-desktop.png);
+    background-size: cover;
+    overflow-x: hidden;
+  }
+}
