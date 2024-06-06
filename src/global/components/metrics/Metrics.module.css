@@ -1,0 +1,7 @@
+.cards{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: auto;
+}

@@ -1,0 +1,43 @@
+.discipline-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-white);
+  padding: 1rem;
+  border-radius: 0 var(--raddi-md) var(--raddi-md) 0;
+  border: solid 1px #cdcaca;
+  border-left: solid 5px var(--primary);
+  gap: 0.5rem;
+  min-width: 300px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.discipline-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  word-wrap: break-word;
+
+  h3,
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  span {
+    font-size: 1.2rem;
+    max-width: 50%;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: var(--primary);
+    color: var(--text-white);
+  }
+}

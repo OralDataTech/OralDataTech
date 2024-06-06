@@ -1,0 +1,20 @@
+.disciplines {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  flex-direction: column;
+
+  .title-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .disciplines-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: auto;
+    margin-top: 1rem;
+  }
+}

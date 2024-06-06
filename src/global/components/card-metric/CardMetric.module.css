@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    border-radius: var(--raddi-lg);
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        color: #fff;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: var(--raddi-lg) var(--raddi-lg) 0 0;
+        z-index: 3;
+    }
+    
+   h2{
+    font-size: 3rem;
+
+   }
+    
+    p, h2{
+        text-align: end;
+    }
+}

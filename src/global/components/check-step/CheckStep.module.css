@@ -1,0 +1,15 @@
+.check-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  word-wrap: break-word;
+  width: fit-content;
+  min-width: 130px;
+  flex: 1;
+  .check-step-title {
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

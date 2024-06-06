@@ -1,0 +1,28 @@
+.full-medical-record {
+  background-color: var(--text-white);
+  border-radius: var(--raddi-lg);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 400px;
+  flex: 1;
+
+  .medical-record-steps {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 930px) {
+  .full-medical-record {
+    flex: 1;
+    width: 100% !important;
+    .medical-record-steps {
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}

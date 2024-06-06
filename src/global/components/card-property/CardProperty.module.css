@@ -1,0 +1,11 @@
+.card-property {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary);
+
+  .card-property-info {
+    span {
+      color: grey;
+    }
+  }
+}

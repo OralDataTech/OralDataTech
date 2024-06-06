@@ -1,0 +1,52 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-white);
+  border-radius: var(--raddi-sm);
+  padding: 0 0 1rem 0;
+  min-width: 300px;
+
+  h2,
+  p {
+    text-align: center;
+  }
+  p {
+    color: grey;
+  }
+  a {
+    color: var(--text-black) !important;
+  }
+}
+
+.head-user-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 20%;
+  border-radius: var(--raddi-sm) var(--raddi-sm) 0 0;
+
+  img {
+    width: 100%;
+    border-radius: var(--raddi-sm) var(--raddi-sm) 0 0;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 50px;
+    border: solid 5px var(--text-white);
+  }
+}
+
+.another-information {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+
+  p {
+    color: var(--primary);
+  }
+}

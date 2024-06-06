@@ -1,0 +1,23 @@
+.container-select-discipline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  overflow-y: auto;
+
+  .head-select-discipline {
+    background-color: var(--text-white);
+    padding: 1rem;
+    border-radius: var(--raddi-sm);
+  }
+
+  .select-discipline-button {
+    width: fit-content;
+    padding: 0;
+    color: var(--text-black);
+    border-radius: var(--raddi-lg);
+  }
+  .selected {
+    border: solid 3px rgb(3, 255, 3);
+  }
+}

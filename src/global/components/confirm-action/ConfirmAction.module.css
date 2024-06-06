@@ -1,0 +1,34 @@
+.confirm-modal-form {
+  background-color: var(--text-white);
+  border-radius: var(--raddi);
+  padding: 1rem 0;
+  width: fit-content;
+  height: fit-content;
+  border-radius: var(--raddi-sm);
+
+  .title-group,
+  .button-group {
+    display: flex;
+    padding: 0 1rem;
+    padding: 0 1rem;
+  }
+
+  .title-group {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-group {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+  }
+
+  hr {
+    margin: 0.5rem 0;
+  }
+}

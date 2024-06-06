@@ -1,0 +1,22 @@
+.last-prontuaries {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .title-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .prontuaries {
+    display: flex;
+    gap: 1rem;
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

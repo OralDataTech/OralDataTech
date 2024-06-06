@@ -1,0 +1,47 @@
+.menu {
+  p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem;
+
+    svg {
+      color: var(--primary);
+    }
+  }
+  .menu-item {
+    background-color: var(--background-gray);
+    border-left: solid 2px var(--primary);
+
+    a {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      word-break: break-all;
+
+      small {
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+    }
+    .count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary);
+      width: 30px;
+      font-size: small;
+      height: 30px;
+      padding: 0;
+      border-radius: 50%;
+      color: var(--text-white);
+    }
+  }
+}
+
+.menu-notifications {
+  height: fit-content;
+}

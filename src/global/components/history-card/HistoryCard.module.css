@@ -1,0 +1,46 @@
+.title {
+  display: flex;
+  gap: 5px;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  small {
+    max-width: 100%;
+    max-height: 100%;
+    font-weight: bold;
+  }
+
+  .btn-group-card-history {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+.more-results {
+  display: flex;
+  gap: 1rem;
+}
+
+.image {
+  width: 100%;
+  max-height: 500px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer;
+  content: "Clique para ampliar a imagem";
+
+  &:hover {
+    position: relative;
+    display: flex;
+    filter: brightness(0.5);
+    content: "Clique para ampliar a imagem";
+  }
+}

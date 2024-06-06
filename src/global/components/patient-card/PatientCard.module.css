@@ -1,0 +1,20 @@
+.patient-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-white);
+  padding: 1rem;
+  border-radius: var(--raddi-sm);
+  gap: 1rem;
+  width: 100%;
+  position: relative;
+  .patient-card-body {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .patient-card-head {
+    display: flex;
+    gap: 1rem;
+  }
+}

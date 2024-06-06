@@ -1,0 +1,43 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 1rem;
+  border-radius: 2rem 2rem 0 0;
+  bottom: 0;
+  display: flex;
+  box-shadow: 0px -9px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--text-white);
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+  }
+
+  svg {
+    color: var(--primary);
+    width: 45px;
+    height: 45px;
+  }
+
+  button {
+    padding: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-container {
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.prontuary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--text-white);
+  padding: 1rem;
+  flex-wrap: wrap;
+  min-width: 300px;
+  border-radius: 0 var(--raddi-lg) var(--raddi-lg) 0;
+  border: solid 1px #d6d6d6;
+  border-left: solid 5px var(--primary);
+  margin-top: 1rem;
+  .prontuary-head {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+
+    gap: 1rem;
+    p {
+      font-weight: bold;
+    }
+    span {
+      font-size: small;
+      color: grey;
+    }
+  }
+
+  .prontuary-body {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    min-width: 300px;
+  }
+
+  button {
+    width: fit-content;
+  }
+}

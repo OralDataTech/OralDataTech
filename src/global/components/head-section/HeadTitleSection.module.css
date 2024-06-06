@@ -1,0 +1,19 @@
+.head-title-section-box {
+  width: 100%;
+  background-color: var(--primary);
+
+  a,
+  svg {
+    text-decoration: none;
+    color: var(--text-white);
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--text-white);
+    padding: 1rem;
+    text-align: center;
+  }
+}

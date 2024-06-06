@@ -1,0 +1,32 @@
+.mini-profile {
+  display: flex;
+  width: fit-content;
+  gap: 1rem;
+  align-items: center;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: transparent !important;
+
+  .mini-profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: larger;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  button {
+    width: fit-content;
+    font-weight: bold;
+    padding: 0;
+    color: var(--primary);
+  }
+}
