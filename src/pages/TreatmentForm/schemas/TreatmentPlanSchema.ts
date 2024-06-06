@@ -1,0 +1,26 @@
+import * as yup from "yup";
+
+export const TreatmentPlanSchema = yup.object().shape({
+  id_medical_record: yup.string().optional(),
+  restauracao_amalgama_c1: yup.string(),
+  restauracao_amalgama_c2_duas_faces: yup.string(),
+  restauracao_amalgama_c1_tres_faces: yup.string(),
+  restauracao_amalgama_c1_complexa: yup.string(),
+  restauracao_div: yup.string(),
+  restauracao_resina_c1: yup.string(),
+  restauracao_resina_c2_duas_faces: yup.string(),
+  restauracao_resina_c1_tres_faces: yup.string(),
+  restauracao_resina_c4: yup.string(),
+  restauracao_resina_c5: yup.string(),
+  restauracao_resina_complexa: yup.string(),
+  clareamento_vital: yup.string(),
+  clareamento_nao_vital: yup.string(),
+  exodontias: yup.string(),
+  selantes: yup.string(),
+  radiografias: yup.string(),
+  endodontias: yup.string(),
+  tratamento_periodontal: yup.string(),
+  protese_parcial_removivel: yup.string(),
+  protese_total: yup.string(),
+  protese_fixa: yup.string(),
+});
