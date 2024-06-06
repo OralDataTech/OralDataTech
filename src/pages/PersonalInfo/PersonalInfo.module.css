@@ -1,0 +1,30 @@
+.personal-infos-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--text-white);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .custom-form-group-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    small {
+      color: red;
+    }
+  }
+}

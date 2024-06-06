@@ -1,0 +1,20 @@
+export type PatientFields = {
+  address: string;
+  address_city: string;
+  address_complement: string;
+  address_neighborhood: string;
+  address_number: number;
+  address_uf: string;
+  address_zip_code: string;
+  cpf: string;
+  sus_card?: string;
+  gender: string;
+  issuing_body?: string;
+  marital_status: string;
+  name: string;
+  social_name: string;
+  naturalness: string;
+  phone: string;
+  profession: string;
+  rg?: string;
+};

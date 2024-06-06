@@ -1,0 +1,31 @@
+.form-patient {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem !important;
+  background-color: var(--text-white);
+  input,
+  button,
+  select {
+    width: 100% !important;
+  }
+
+  .title-section {
+    margin-top: 1rem;
+  }
+
+  hr,
+  .title-section {
+    width: 100%;
+  }
+
+  small {
+    color: red;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+}

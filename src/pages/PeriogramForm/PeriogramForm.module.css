@@ -1,0 +1,13 @@
+.form-periogram {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem !important;
+    gap: 1rem;
+    min-height: 100vh;
+    background-color: var(--text-white);
+  
+    small {
+      color: red;
+    }
+  }
+  
