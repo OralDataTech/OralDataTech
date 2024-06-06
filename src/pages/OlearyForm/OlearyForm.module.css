@@ -1,0 +1,17 @@
+.form-oleary {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem !important;
+  gap: 1rem;
+  min-height: 100vh;
+  background-color: var(--text-white);
+
+  .classification {
+    width: 100%;
+    display: flex;
+
+    button {
+      width: 100%;
+    }
+  }
+}

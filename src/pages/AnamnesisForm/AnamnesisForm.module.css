@@ -1,0 +1,11 @@
+.form-anamnesis {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--text-white);
+  padding: 2rem 1rem !important;
+
+  small {
+    color: #d62f2f;
+  }
+}

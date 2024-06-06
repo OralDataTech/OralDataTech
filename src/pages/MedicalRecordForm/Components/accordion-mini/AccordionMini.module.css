@@ -1,0 +1,25 @@
+.accordion-container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: inherit !important;
+  margin: 0 !important;
+
+  .accordion-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .accordion-container {
+    a {
+      width: 100% !important;
+    }
+    .btn-add {
+      width: 100% !important;
+    }
+  }
+}

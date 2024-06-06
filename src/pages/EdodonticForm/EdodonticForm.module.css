@@ -1,0 +1,29 @@
+.form-edodontic {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem !important;
+  gap: 1rem;
+  min-height: 100vh;
+  background-color: var(--text-white);
+
+  small {
+    margin-top: 0;
+    color: #d62f2f;
+  }
+
+  .box-dente {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    border: solid 2px var(--primary);
+    padding: 2rem;
+    border-radius: var(--raddi-sm);
+  }
+
+  .form-control-dente {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

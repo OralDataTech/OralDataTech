@@ -1,0 +1,36 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  height: 100vh !important;
+  background-color: var(--background);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  gap: 1rem;
+  backdrop-filter: blur(2px);
+  border-radius: 1rem;
+  width: 100%;
+  height: fit-content;
+
+  small {
+    color: var(--error);
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.custom-form-group {
+  width: 100%;
+  margin: 1rem 0;
+}

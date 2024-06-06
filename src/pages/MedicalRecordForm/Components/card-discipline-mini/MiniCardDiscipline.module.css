@@ -1,0 +1,35 @@
+.discipline-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: flex-start;
+  background-color: var(--text-white);
+  border-radius: var(--raddi-sm);
+  padding: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+  max-width: 80%;
+  .discipline-head {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .abreviation {
+    padding: 1rem;
+    border-radius: var(--raddi-sm);
+    background-color: rgb(118, 118, 118);
+    color: var(--text-white);
+    text-transform: uppercase;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 700px) {
+  .discipline-card {
+    min-width: 100%;
+  }
+}

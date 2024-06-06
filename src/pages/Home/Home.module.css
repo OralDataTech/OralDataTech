@@ -1,0 +1,17 @@
+.home-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  section {
+    background-color: var(--text-white);
+    padding: 1rem;
+    border-radius: 1rem;
+    flex: 1;
+  }
+}
+
+@media (max-width: 490px) {
+  .home-container {
+    width: 90%;
+  }
+}

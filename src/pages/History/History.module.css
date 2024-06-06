@@ -1,0 +1,17 @@
+.containerHistory {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  a {
+    color: var(--text-white) !important;
+  }
+  background-color: var(--background);
+  padding-bottom: 1rem;
+}
+
+.historic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

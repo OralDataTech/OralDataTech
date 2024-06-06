@@ -1,0 +1,8 @@
+.medical-record-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem !important;
+  height: 100vh;
+  border-radius: var(--raddi-lg);
+}

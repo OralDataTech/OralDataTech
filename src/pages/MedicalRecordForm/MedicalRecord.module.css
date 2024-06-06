@@ -1,0 +1,25 @@
+.container-medical-record {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem !important;
+  background-color: var(--background);
+  border-radius: var(--raddi-lg);
+}
+
+.tab-pannel {
+  padding: 0 !important;
+  width: 100%;
+}
+
+.tabs {
+  button {
+    color: var(--primary);
+  }
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
