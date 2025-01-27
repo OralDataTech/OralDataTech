@@ -167,7 +167,7 @@ export default function ExamsForm() {
               {...field}
               variant="filled"
               color="error"
-              label="Exame Intrabucal Labios"
+              label="Exame Intrabucal Lábios"
               error={!!errors.exame_intrabucal_labios}
               helperText={
                 errors.exame_intrabucal_labios ? "Campo obrigatório" : ""
