@@ -154,7 +154,7 @@ export default function AnamnesisForm() {
       >
         <FormControl color="error">
           <FormLabel id="label-q-1">
-            Alguma Diabete, cancer, tuberculose na família?
+            Alguma Diabete, câncer, tuberculose na família?
           </FormLabel>
           <Controller
             name="alguma_diabete_cancer_tuberculose_familia"
@@ -198,7 +198,7 @@ export default function AnamnesisForm() {
                   color="error"
                   variant="filled"
                   {...field}
-                  label="Qual diabete, cancer, tuberculose na família?"
+                  label="Qual diabete, câncer, tuberculose na família?"
                   error={!!errors.qual_diabete_cancer_tuberculose_familia}
                   helperText={
                     errors.qual_diabete_cancer_tuberculose_familia?.message
@@ -272,7 +272,7 @@ export default function AnamnesisForm() {
 
         <FormControl color="error">
           <FormLabel id="label-bebidas-alcolicas">
-            Bebidas alcoolicas?
+            Bebidas alcoólicas?
           </FormLabel>
           <Controller
             control={control}
