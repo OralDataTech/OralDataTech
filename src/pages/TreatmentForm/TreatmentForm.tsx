@@ -35,11 +35,11 @@ export default function TreatmentForm() {
       radiografias: "",
       restauracao_amalgama_c1: "",
       restauracao_amalgama_c1_complexa: "",
-      restauracao_amalgama_c1_tres_faces: "",
+      restauracao_amalgama_classe_3: "",
       restauracao_amalgama_c2_duas_faces: "",
-      restauracao_div: "",
+      restauracao_civ: "",
       restauracao_resina_c1: "",
-      restauracao_resina_c1_tres_faces: "",
+      restauracao_resina_c3: "",
       restauracao_resina_c2_duas_faces: "",
       restauracao_resina_c4: "",
       restauracao_resina_c5: "",
@@ -67,18 +67,18 @@ export default function TreatmentForm() {
         response.restauracao_amalgama_c1_complexa
       );
       setValue(
-        "restauracao_amalgama_c1_tres_faces",
-        response.restauracao_amalgama_c1_tres_faces
+        "restauracao_amalgama_classe_3",
+        response.restauracao_amalgama_classe_3
       );
       setValue(
         "restauracao_amalgama_c2_duas_faces",
         response.restauracao_amalgama_c2_duas_faces
       );
-      setValue("restauracao_div", response.restauracao_div);
+      setValue("restauracao_civ", response.restauracao_civ);
       setValue("restauracao_resina_c1", response.restauracao_resina_c1);
       setValue(
-        "restauracao_resina_c1_tres_faces",
-        response.restauracao_resina_c1_tres_faces
+        "restauracao_resina_c3",
+        response.restauracao_resina_c3
       );
       setValue(
         "restauracao_resina_c2_duas_faces",
@@ -264,16 +264,16 @@ export default function TreatmentForm() {
           )}
         />
         <Controller
-          name="restauracao_amalgama_c1_tres_faces"
+          name="restauracao_amalgama_classe_3"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Restauração Amálgama C1 Três Faces"
+              label="Restauração de Amálgama Classe 3"
               variant="filled"
               color="error"
-              error={!!errors.restauracao_amalgama_c1_tres_faces}
-              helperText={errors.restauracao_amalgama_c1_tres_faces?.message}
+              error={!!errors.restauracao_amalgama_classe_3}
+              helperText={errors.restauracao_amalgama_classe_3?.message}
             />
           )}
         />
@@ -292,16 +292,16 @@ export default function TreatmentForm() {
           )}
         />
         <Controller
-          name="restauracao_div"
+          name="restauracao_civ"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Restauração Div"
+              label="Restauração CIV"
               variant="filled"
               color="error"
-              error={!!errors.restauracao_div}
-              helperText={errors.restauracao_div?.message}
+              error={!!errors.restauracao_civ}
+              helperText={errors.restauracao_civ?.message}
             />
           )}
         />
@@ -320,16 +320,16 @@ export default function TreatmentForm() {
           )}
         />
         <Controller
-          name="restauracao_resina_c1_tres_faces"
+          name="restauracao_resina_c3"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Restauração Resina C1 Três Faces"
+              label="Restauração Resina C3"
               variant="filled"
               color="error"
-              error={!!errors.restauracao_resina_c1_tres_faces}
-              helperText={errors.restauracao_resina_c1_tres_faces?.message}
+              error={!!errors.restauracao_resina_c3}
+              helperText={errors.restauracao_resina_c3?.message}
             />
           )}
         />
