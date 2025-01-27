@@ -3,12 +3,12 @@ export type TreatmentPlan = {
   id_medical_record: string;
   restauracao_amalgama_c1: string;
   restauracao_amalgama_c2_duas_faces: string;
-  restauracao_amalgama_c1_tres_faces: string;
+  restauracao_amalgama_classe_3: string;
   restauracao_amalgama_c1_complexa: string;
-  restauracao_div: string;
+  restauracao_civ: string;
   restauracao_resina_c1: string;
   restauracao_resina_c2_duas_faces: string;
-  restauracao_resina_c1_tres_faces: string;
+  restauracao_resina_c3: string;
   restauracao_resina_c4: string;
   restauracao_resina_c5: string;
   restauracao_resina_complexa: string;
