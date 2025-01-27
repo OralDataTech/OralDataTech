@@ -283,7 +283,7 @@ export default function MedicalRecordForm() {
         />
 
         <AccordionMini
-          btnName="Adicionar Periograna"
+          btnName="Adicionar Periograma"
           qtd={medicalRecord?.periograms.length || 0}
           title={`Periograma`}
           to="periograma/create"
