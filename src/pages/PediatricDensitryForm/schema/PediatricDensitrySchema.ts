@@ -45,7 +45,7 @@ export const PediatricDensitrySchema = yup.object().shape({
   caso_nao_aceite: yup.string().required("Campo obrigatório"),
   usa_fio_dental_diariamente: yup.string().required("Campo obrigatório"),
   diario_alimentar_ultimas_24h: yup.string().required("Campo obrigatório"),
-  come_gulosemas_entre_refeicoes: yup.string().required("Campo obrigatório"),
+  come_guloseimas_entre_refeicoes: yup.string().required("Campo obrigatório"),
   como_classifica_a_saude_bucal_do_seu_filho: yup
     .string()
     .required("Campo obrigatório"),
@@ -57,7 +57,7 @@ export const PediatricDensitrySchema = yup.object().shape({
     .string()
     .required("Campo obrigatório"),
   como_classifica_sua_saude_bucal: yup.string().required("Campo obrigatório"),
-  oque_pode_ser_feito_para_melhorar: yup.string().required("Campo obrigatório"),
+  o_que_pode_ser_feito_para_melhorar: yup.string().required("Campo obrigatório"),
   crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca: yup
     .string()
     .required("Campo obrigatório"),
@@ -79,20 +79,20 @@ export const PediatricDensitrySchema = yup.object().shape({
     .required("Campo obrigatório"),
   tecidos_moles: yup.string().required("Campo obrigatório"),
   denticao: yup.string().required("Campo obrigatório"),
-  denticao_decidual_tipo_de_arco_superior: yup
+  denticao_decidua_tipo_de_arco_superior: yup
     .string()
     .required("Campo obrigatório"),
-  denticao_decidual_tipo_de_arco_inferior: yup
+  denticao_decidua_tipo_de_arco_inferior: yup
     .string()
     .required("Campo obrigatório"),
-  denticao_decidual_relacao_terminal_de_2_molares_direito: yup
+  denticao_decidua_relacao_terminal_de_2_molares_direito: yup
     .string()
     .required("Campo obrigatório"),
-  denticao_decidual_relacao_terminal_de_2_molares_esquerdo: yup
+  denticao_decidua_relacao_terminal_de_2_molares_esquerdo: yup
     .string()
     .required("Campo obrigatório"),
-  diastemas_primarias_superior: yup.string().required("Campo obrigatório"),
-  diastemas_primarias_inferior: yup.string().required("Campo obrigatório"),
+  diastemas_primarios_superior: yup.string().required("Campo obrigatório"),
+  diastemas_primarios_inferior: yup.string().required("Campo obrigatório"),
   desticao_mista_molares_direito: yup.string().required("Campo obrigatório"),
   desticao_mista_molares_esquerdo: yup.string().required("Campo obrigatório"),
   desticao_mista_caninos_direito: yup.string().required("Campo obrigatório"),

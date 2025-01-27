@@ -41,13 +41,13 @@ export type PediatricDentistryCols =
   | "caso_nao_aceite"
   | "usa_fio_dental_diariamente"
   | "diario_alimentar_ultimas_24h"
-  | "come_gulosemas_entre_refeicoes"
+  | "come_guloseimas_entre_refeicoes"
   | "como_classifica_a_saude_bucal_do_seu_filho"
   | "historia_de_carie_presente_ou_passado_na_familia"
   | "tem_irmaos"
   | "sabe_como_evitar_a_instalacao_da_doenca_carie_dentaria"
   | "como_classifica_sua_saude_bucal"
-  | "oque_pode_ser_feito_para_melhorar"
+  | "o_que_pode_ser_feito_para_melhorar"
   | "crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca"
   | "tipo_traumatismo"
   | "idade_quando_sofreu_traumatismo"
@@ -61,12 +61,12 @@ export type PediatricDentistryCols =
   | "dentes_com_descoloracao_sugestivas_de_traumas"
   | "tecidos_moles"
   | "denticao"
-  | "denticao_decidual_tipo_de_arco_superior"
-  | "denticao_decidual_tipo_de_arco_inferior"
-  | "denticao_decidual_relacao_terminal_de_2_molares_direito"
-  | "denticao_decidual_relacao_terminal_de_2_molares_esquerdo"
-  | "diastemas_primarias_superior"
-  | "diastemas_primarias_inferior"
+  | "denticao_decidua_tipo_de_arco_superior"
+  | "denticao_decidua_tipo_de_arco_inferior"
+  | "denticao_decidua_relacao_terminal_de_2_molares_direito"
+  | "denticao_decidua_relacao_terminal_de_2_molares_esquerdo"
+  | "diastemas_primarios_superior"
+  | "diastemas_primarios_inferior"
   | "desticao_mista_molares_direito"
   | "desticao_mista_molares_esquerdo"
   | "desticao_mista_caninos_direito"
@@ -120,13 +120,13 @@ export type PediatricDentistryFields = {
   caso_nao_aceite: string;
   usa_fio_dental_diariamente: string;
   diario_alimentar_ultimas_24h: string;
-  come_gulosemas_entre_refeicoes: string;
+  come_guloseimas_entre_refeicoes: string;
   como_classifica_a_saude_bucal_do_seu_filho: string;
   historia_de_carie_presente_ou_passado_na_familia: string;
   tem_irmaos: string;
   sabe_como_evitar_a_instalacao_da_doenca_carie_dentaria: string;
   como_classifica_sua_saude_bucal: string;
-  oque_pode_ser_feito_para_melhorar: string;
+  o_que_pode_ser_feito_para_melhorar: string;
   crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca: string;
   tipo_traumatismo: string;
   idade_quando_sofreu_traumatismo: string;
@@ -140,12 +140,12 @@ export type PediatricDentistryFields = {
   dentes_com_descoloracao_sugestivas_de_traumas: string;
   tecidos_moles: string;
   denticao: string;
-  denticao_decidual_tipo_de_arco_superior: string;
-  denticao_decidual_tipo_de_arco_inferior: string;
-  denticao_decidual_relacao_terminal_de_2_molares_direito: string;
-  denticao_decidual_relacao_terminal_de_2_molares_esquerdo: string;
-  diastemas_primarias_superior: string;
-  diastemas_primarias_inferior: string;
+  denticao_decidua_tipo_de_arco_superior: string;
+  denticao_decidua_tipo_de_arco_inferior: string;
+  denticao_decidua_relacao_terminal_de_2_molares_direito: string;
+  denticao_decidua_relacao_terminal_de_2_molares_esquerdo: string;
+  diastemas_primarios_superior: string;
+  diastemas_primarios_inferior: string;
   desticao_mista_molares_direito: string;
   desticao_mista_molares_esquerdo: string;
   desticao_mista_caninos_direito: string;
@@ -198,13 +198,13 @@ export type PediatricDentistryFieldsUpdate = {
   caso_nao_aceite: string;
   usa_fio_dental_diariamente: string;
   diario_alimentar_ultimas_24h: string;
-  come_gulosemas_entre_refeicoes: string;
+  come_guloseimas_entre_refeicoes: string;
   como_classifica_a_saude_bucal_do_seu_filho: string;
   historia_de_carie_presente_ou_passado_na_familia: string;
   tem_irmaos: string;
   sabe_como_evitar_a_instalacao_da_doenca_carie_dentaria: string;
   como_classifica_sua_saude_bucal: string;
-  oque_pode_ser_feito_para_melhorar: string;
+  o_que_pode_ser_feito_para_melhorar: string;
   crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca: string;
   tipo_traumatismo: string;
   idade_quando_sofreu_traumatismo: string;
@@ -218,12 +218,12 @@ export type PediatricDentistryFieldsUpdate = {
   dentes_com_descoloracao_sugestivas_de_traumas: string;
   tecidos_moles: string;
   denticao: string;
-  denticao_decidual_tipo_de_arco_superior: string;
-  denticao_decidual_tipo_de_arco_inferior: string;
-  denticao_decidual_relacao_terminal_de_2_molares_direito: string;
-  denticao_decidual_relacao_terminal_de_2_molares_esquerdo: string;
-  diastemas_primarias_superior: string;
-  diastemas_primarias_inferior: string;
+  denticao_decidua_tipo_de_arco_superior: string;
+  denticao_decidua_tipo_de_arco_inferior: string;
+  denticao_decidua_relacao_terminal_de_2_molares_direito: string;
+  denticao_decidua_relacao_terminal_de_2_molares_esquerdo: string;
+  diastemas_primarios_superior: string;
+  diastemas_primarios_inferior: string;
   desticao_mista_molares_direito: string;
   desticao_mista_molares_esquerdo: string;
   desticao_mista_caninos_direito: string;

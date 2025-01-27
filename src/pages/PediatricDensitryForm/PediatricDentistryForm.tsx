@@ -74,13 +74,13 @@ export default function PediatricDentistryForm() {
       caso_nao_aceite: "",
       usa_fio_dental_diariamente: "",
       diario_alimentar_ultimas_24h: "",
-      come_gulosemas_entre_refeicoes: "",
+      come_guloseimas_entre_refeicoes: "",
       como_classifica_a_saude_bucal_do_seu_filho: "",
       historia_de_carie_presente_ou_passado_na_familia: "",
       tem_irmaos: "",
       sabe_como_evitar_a_instalacao_da_doenca_carie_dentaria: "",
       como_classifica_sua_saude_bucal: "",
-      oque_pode_ser_feito_para_melhorar: "",
+      o_que_pode_ser_feito_para_melhorar: "",
       crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca: "",
       tipo_traumatismo: "",
       idade_quando_sofreu_traumatismo: "",
@@ -94,12 +94,12 @@ export default function PediatricDentistryForm() {
       dentes_com_descoloracao_sugestivas_de_traumas: "",
       tecidos_moles: "",
       denticao: "",
-      denticao_decidual_tipo_de_arco_superior: "",
-      denticao_decidual_tipo_de_arco_inferior: "",
-      denticao_decidual_relacao_terminal_de_2_molares_direito: "",
-      denticao_decidual_relacao_terminal_de_2_molares_esquerdo: "",
-      diastemas_primarias_superior: "",
-      diastemas_primarias_inferior: "",
+      denticao_decidua_tipo_de_arco_superior: "",
+      denticao_decidua_tipo_de_arco_inferior: "",
+      denticao_decidua_relacao_terminal_de_2_molares_direito: "",
+      denticao_decidua_relacao_terminal_de_2_molares_esquerdo: "",
+      diastemas_primarios_superior: "",
+      diastemas_primarios_inferior: "",
       desticao_mista_molares_direito: "",
       desticao_mista_molares_esquerdo: "",
       desticao_mista_caninos_direito: "",
@@ -600,7 +600,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Horarios de escovacao diaria?"
+              label="Horários de escovação diária?"
               variant="filled"
               fullWidth
               error={!!errors.horarios_escovacao_diaria}
@@ -616,7 +616,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Desde quando essa escovacao?"
+              label="Desde quando essa escovação?"
               variant="filled"
               fullWidth
               error={!!errors.desde_quando_essa_escovacao}
@@ -705,7 +705,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Diario alimentar nas ultimas 24h?"
+              label="Diário alimentar nas últimas 24h?"
               variant="filled"
               fullWidth
               error={!!errors.diario_alimentar_ultimas_24h}
@@ -715,17 +715,17 @@ export default function PediatricDentistryForm() {
         />
 
         <Controller
-          name="come_gulosemas_entre_refeicoes"
+          name="come_guloseimas_entre_refeicoes"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
               color="error"
-              label="Come gulosemas entre refeções?"
+              label="Come guloseimas entre refeições?"
               variant="filled"
               fullWidth
-              error={!!errors.come_gulosemas_entre_refeicoes}
-              helperText={errors.come_gulosemas_entre_refeicoes?.message}
+              error={!!errors.come_guloseimas_entre_refeicoes}
+              helperText={errors.come_guloseimas_entre_refeicoes?.message}
             />
           )}
         />
@@ -737,7 +737,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Como classifica a saude bucal do seu filho?"
+              label="Como classifica a saúde bucal do seu filho?"
               variant="filled"
               fullWidth
               error={!!errors.como_classifica_a_saude_bucal_do_seu_filho}
@@ -755,7 +755,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Historia de carie presente ou passado na familia?"
+              label="História de cárie presente ou passado na familia?"
               variant="filled"
               fullWidth
               error={!!errors.historia_de_carie_presente_ou_passado_na_familia}
@@ -789,7 +789,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Sabe como evitar a instalacao da doenca carie dentaria?"
+              label="Sabe como evitar a instalação da doença cárie dentária?"
               variant="filled"
               fullWidth
               error={
@@ -810,7 +810,7 @@ export default function PediatricDentistryForm() {
             <TextField
               {...field}
               color="error"
-              label="Como classifica sua saude bucal?"
+              label="Como classifica sua saúde bucal?"
               variant="filled"
               fullWidth
               error={!!errors.como_classifica_sua_saude_bucal}
@@ -820,22 +820,22 @@ export default function PediatricDentistryForm() {
         />
 
         <Controller
-          name="oque_pode_ser_feito_para_melhorar"
+          name="o_que_pode_ser_feito_para_melhorar"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
               color="error"
-              label="Oque pode ser feito para melhorar?"
+              label="O que pode ser feito para melhorar?"
               variant="filled"
               fullWidth
-              error={!!errors.oque_pode_ser_feito_para_melhorar}
-              helperText={errors.oque_pode_ser_feito_para_melhorar?.message}
+              error={!!errors.o_que_pode_ser_feito_para_melhorar}
+              helperText={errors.o_que_pode_ser_feito_para_melhorar?.message}
             />
           )}
         />
 
-        <p>Sobre traumatismo buco-destários</p>
+        <p>Sobre traumatismo buco-dentários</p>
         <Divider />
 
         <Controller
@@ -847,12 +847,12 @@ export default function PediatricDentistryForm() {
                 htmlFor="crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca"
                 color="error"
               >
-                A crianca já sofreu algum tipo de traumatismo na boca
+                A criança já sofreu algum tipo de traumatismo na boca
               </InputLabel>
               <Select
                 {...field}
                 color="error"
-                label="A crianca já sofreu algum tipo de traumatismo na boca"
+                label="A criança já sofreu algum tipo de traumatismo na boca"
                 id="crianca_ja_sofreu_algum_tipo_de_traumatismo_na_boca"
                 fullWidth
                 error={
@@ -1087,56 +1087,56 @@ export default function PediatricDentistryForm() {
         />
 
         <Controller
-          name="denticao_decidual_tipo_de_arco_superior"
+          name="denticao_decidua_tipo_de_arco_superior"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Dentição Decidual - Tipo de Arco Superior"
+              label="Dentição Decidua - Tipo de Arco Superior"
               variant="filled"
               color="error"
               fullWidth
-              error={!!errors.denticao_decidual_tipo_de_arco_superior}
+              error={!!errors.denticao_decidua_tipo_de_arco_superior}
               helperText={
-                errors.denticao_decidual_tipo_de_arco_superior?.message
+                errors.denticao_decidua_tipo_de_arco_superior?.message
               }
             />
           )}
         />
 
         <Controller
-          name="denticao_decidual_tipo_de_arco_inferior"
+          name="denticao_decidua_tipo_de_arco_inferior"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Dentição Decidual - Tipo de Arco Inferior"
+              label="Dentição Decidua - Tipo de Arco Inferior"
               variant="filled"
               color="error"
               fullWidth
-              error={!!errors.denticao_decidual_tipo_de_arco_inferior}
+              error={!!errors.denticao_decidua_tipo_de_arco_inferior}
               helperText={
-                errors.denticao_decidual_tipo_de_arco_inferior?.message
+                errors.denticao_decidua_tipo_de_arco_inferior?.message
               }
             />
           )}
         />
 
         <Controller
-          name="denticao_decidual_relacao_terminal_de_2_molares_direito"
+          name="denticao_decidua_relacao_terminal_de_2_molares_direito"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Dentição Decidual - Relação Terminal de 2 Molares Direito"
+              label="Dentição Decidua - Relação Terminal de 2 Molares Direito"
               variant="filled"
               color="error"
               fullWidth
               error={
-                !!errors.denticao_decidual_relacao_terminal_de_2_molares_direito
+                !!errors.denticao_decidua_relacao_terminal_de_2_molares_direito
               }
               helperText={
-                errors.denticao_decidual_relacao_terminal_de_2_molares_direito
+                errors.denticao_decidua_relacao_terminal_de_2_molares_direito
                   ?.message
               }
             />
@@ -1144,20 +1144,20 @@ export default function PediatricDentistryForm() {
         />
 
         <Controller
-          name="denticao_decidual_relacao_terminal_de_2_molares_esquerdo"
+          name="denticao_decidua_relacao_terminal_de_2_molares_esquerdo"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Dentição Decidual - Relação Terminal de 2 Molares Esquerdo"
+              label="Dentição Decidua - Relação Terminal de 2 Molares Esquerdo"
               variant="filled"
               color="error"
               fullWidth
               error={
-                !!errors.denticao_decidual_relacao_terminal_de_2_molares_esquerdo
+                !!errors.denticao_decidua_relacao_terminal_de_2_molares_esquerdo
               }
               helperText={
-                errors.denticao_decidual_relacao_terminal_de_2_molares_esquerdo
+                errors.denticao_decidua_relacao_terminal_de_2_molares_esquerdo
                   ?.message
               }
             />
@@ -1165,33 +1165,33 @@ export default function PediatricDentistryForm() {
         />
 
         <Controller
-          name="diastemas_primarias_superior"
+          name="diastemas_primarios_superior"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Diastemas Primárias Superior"
+              label="Diastemas Primários Superior"
               variant="filled"
               color="error"
               fullWidth
-              error={!!errors.diastemas_primarias_superior}
-              helperText={errors.diastemas_primarias_superior?.message}
+              error={!!errors.diastemas_primarios_superior}
+              helperText={errors.diastemas_primarios_superior?.message}
             />
           )}
         />
 
         <Controller
-          name="diastemas_primarias_inferior"
+          name="diastemas_primarios_inferior"
           control={control}
           render={({ field }) => (
             <TextField
               {...field}
-              label="Diastemas Primárias Inferior"
+              label="Diastemas Primários Inferior"
               variant="filled"
               color="error"
               fullWidth
-              error={!!errors.diastemas_primarias_inferior}
-              helperText={errors.diastemas_primarias_inferior?.message}
+              error={!!errors.diastemas_primarios_inferior}
+              helperText={errors.diastemas_primarios_inferior?.message}
             />
           )}
         />
