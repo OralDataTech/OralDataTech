@@ -210,7 +210,7 @@ export default function EdodonticForm() {
                   <FormControlLabel
                     value={"Difusa"}
                     control={<Radio color="error" />}
-                    label="Disfusa"
+                    label="Difusa"
                   />
                 </RadioGroup>
                 <small>{errors.sede?.message}</small>
@@ -287,7 +287,7 @@ export default function EdodonticForm() {
         </FormControl>
 
         <FormControl color="error">
-          <FormLabel id="label-b-4">Frequencia</FormLabel>
+          <FormLabel id="label-b-4">Frequência</FormLabel>
           <Controller
             name="frequencia"
             control={control}
@@ -603,7 +603,7 @@ export default function EdodonticForm() {
         </FormControl>
 
         <FormControl color="error">
-          <FormLabel id="label-d-1">Peripercial</FormLabel>
+          <FormLabel id="label-d-1">Periapical</FormLabel>
           <Controller
             name="palpacao_periapical"
             control={control}
@@ -658,9 +658,9 @@ export default function EdodonticForm() {
                     label="Em evolução"
                   />
                   <FormControlLabel
-                    value={"Evoluido"}
+                    value={"Evoluído"}
                     control={<Radio color="error" />}
-                    label="Evoluido"
+                    label="Evoluído"
                   />
                 </RadioGroup>
                 <small>{errors.palpacao_edema?.message}</small>
@@ -945,11 +945,11 @@ export default function EdodonticForm() {
           )}
         />
 
-        <p>Análise de aspécto radiográfico</p>
+        <p>Análise de aspecto radiográfico</p>
         <Divider />
 
         <FormControl color="error">
-          <FormLabel id="label-g">Camara Pulpar</FormLabel>
+          <FormLabel id="label-g">Câmara Pulpar</FormLabel>
           <Controller
             name="camara_pulpar"
             control={control}
@@ -1060,9 +1060,9 @@ export default function EdodonticForm() {
                     label="Obturado parcialmente"
                   />
                   <FormControlLabel
-                    value={"Rizogênese inconpleta"}
+                    value={"Rizogênese incompleta"}
                     control={<Radio color="error" />}
-                    label="Rizogênese inconpleta"
+                    label="Rizogênese incompleta"
                   />
                 </RadioGroup>
                 <small>{errors.canal_radicular?.message}</small>
