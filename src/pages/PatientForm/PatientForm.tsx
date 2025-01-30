@@ -73,7 +73,7 @@ export default function PatientForm() {
       setValue("name", patient.name);
       setValue("naturalness", patient.naturalness);
       setValue("phone", patient.phone);
-      setValue("date_of_birth", formatted_date_of_birth);
+      setValue("date_of_birth", patient.date_of_birth);
       setValue("profession", patient.profession);
       setValue("rg", patient.rg || "");
       setValue("sus_card", patient.sus_card || "");
