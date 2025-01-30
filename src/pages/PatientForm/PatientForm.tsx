@@ -321,6 +321,7 @@ export default function PatientForm() {
                   <MenuItem value={"Separado"}>Separado</MenuItem>
                   <MenuItem value={"Divorciado"}>Divorciado</MenuItem>
                   <MenuItem value={"Viúvo"}>Viúvo</MenuItem>
+                  <MenuItem value={"Não se aplica"}>Não se aplica</MenuItem>
                 </Select>
                 <small>{errors.marital_status?.message}</small>
               </>
