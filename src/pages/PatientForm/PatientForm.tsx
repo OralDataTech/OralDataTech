@@ -45,6 +45,7 @@ export default function PatientForm() {
       name: "",
       naturalness: "",
       phone: "",
+      date_of_birth: undefined,
       profession: "",
       rg: "",
       social_name: "",
@@ -54,6 +55,9 @@ export default function PatientForm() {
   useEffect(() => {
     async function getPatient() {
       const patient = await getOneById(id || "");
+
+      const formatted_date_of_birth = patient.date_of_birth ? new Date(patient.date_of_birth).toISOString().split('T')[0] : '';
+
       setValue("address", patient.address);
       setValue("address_city", patient.address_city);
       setValue("address_complement", patient.address_complement);
@@ -68,6 +72,7 @@ export default function PatientForm() {
       setValue("name", patient.name);
       setValue("naturalness", patient.naturalness);
       setValue("phone", patient.phone);
+      setValue("date_of_birth", formatted_date_of_birth);
       setValue("profession", patient.profession);
       setValue("rg", patient.rg || "");
       setValue("sus_card", patient.sus_card || "");
@@ -148,6 +153,24 @@ export default function PatientForm() {
               error={!!errors.phone}
               {...field}
               helperText={errors.phone?.message}
+            />
+          )}
+        />
+
+        <Controller
+          name="date_of_birth"
+          control={control}
+          render={({ field }) => (
+            <TextField
+              {...field}
+              type="date"
+              color="error"
+              variant="filled"
+              sx={{ width: "100%" }}
+              placeholder="Data de nascimento do paciente"
+              label="Data de nascimento do paciente"
+              error={!!errors.date_of_birth}
+              helperText={errors.date_of_birth?.message}
             />
           )}
         />
