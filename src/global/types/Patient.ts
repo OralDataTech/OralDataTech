@@ -20,6 +20,7 @@ export type Patient = {
   naturalness: string;
   medicalRecords: MedicalRecord[];
   phone: string;
+  date_of_birth: Date;
   profession: string;
   rg: string;
   updated_at: Date;
