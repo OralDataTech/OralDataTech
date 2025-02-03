@@ -15,7 +15,7 @@ export type PatientFields = {
   social_name: string;
   naturalness: string;
   phone: string;
-  date_of_birth: Date;
+  // date_of_birth: Date;
   profession: string;
   rg?: string;
 };
