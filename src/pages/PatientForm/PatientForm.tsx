@@ -158,7 +158,7 @@ export default function PatientForm() {
           )}
         />
 
-{/*         <Controller
+        <Controller
           name="date_of_birth"
           control={control}
           render={({ field }) => (
@@ -174,7 +174,7 @@ export default function PatientForm() {
               helperText={errors.date_of_birth?.message}
             />
           )}
-        /> */}
+        />
 
         <Controller
           name="cpf"
