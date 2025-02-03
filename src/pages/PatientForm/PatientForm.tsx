@@ -45,7 +45,7 @@ export default function PatientForm() {
       name: "",
       naturalness: "",
       phone: "",
-      // date_of_birth: undefined,
+      date_of_birth: undefined,
       profession: "",
       rg: "",
       social_name: "",
@@ -56,8 +56,8 @@ export default function PatientForm() {
     async function getPatient() {
       const patient = await getOneById(id || "");
 
-      //const formatted_date_of_birth = patient.date_of_birth ? new Date(patient.date_of_birth).toISOString().split('T')[0] : '';
-      //const date_date_of_birth: Date = new Date(formatted_date_of_birth);
+      const formatted_date_of_birth = patient.date_of_birth ? new Date(patient.date_of_birth).toISOString().split('T')[0] : '';
+      const date_date_of_birth: Date = new Date(formatted_date_of_birth);
 
       setValue("address", patient.address);
       setValue("address_city", patient.address_city);
@@ -73,7 +73,7 @@ export default function PatientForm() {
       setValue("name", patient.name);
       setValue("naturalness", patient.naturalness);
       setValue("phone", patient.phone);
-      //setValue("date_of_birth", patient.date_of_birth);
+      setValue("date_of_birth", patient.date_of_birth);
       setValue("profession", patient.profession);
       setValue("rg", patient.rg || "");
       setValue("sus_card", patient.sus_card || "");
@@ -158,7 +158,7 @@ export default function PatientForm() {
           )}
         />
 
-{/*         <Controller
+        <Controller
           name="date_of_birth"
           control={control}
           render={({ field }) => (
@@ -174,7 +174,7 @@ export default function PatientForm() {
               helperText={errors.date_of_birth?.message}
             />
           )}
-        /> */}
+        />
 
         <Controller
           name="cpf"
