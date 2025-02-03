@@ -78,7 +78,6 @@ export default function PatientForm() {
       setValue("rg", patient.rg || "");
       setValue("sus_card", patient.sus_card || "");
       setValue("social_name", patient.social_name || "");
-      console.log(date_date_of_birth);
     }
     if (id) {
       getPatient();
