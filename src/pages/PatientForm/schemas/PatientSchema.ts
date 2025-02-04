@@ -36,24 +36,24 @@ export const PatientSchema = yup.object().shape({
     .matches(/^\d+$/, "O telefone deve conter apenas números")
     .min(11, "O telefone deve ter no mínimo 11 dígitos")
     .max(11, "O telefone deve ter no máximo 11 dígitos"),
-  date_of_birth: yup
-    .string()
-    .required("A data de nascimento é obrigatória")
-    .test("isNotFutureDate", "A data de nascimento não pode ser no futuro", (value) => {
-      return new Date (value) <= new Date();
-    })
-    .transform((value) => {
-      // Verifica se a string pode ser convertida para uma data válida
-      if (typeof value === 'string') {
-        const date = new Date(value);
-        const formattedDate = date.toISOString().split('T')[0];
-        console.log(formattedDate);
-        if (!isNaN(date.getTime())) {
-          return formattedDate; // Retorna um objeto Date
-        }
-      }
-      return value; // Retorna o valor original caso a data seja inválida
-    }),
+  // date_of_birth: yup
+  //   .string()
+  //   .required("A data de nascimento é obrigatória")
+  //   .test("isNotFutureDate", "A data de nascimento não pode ser no futuro", (value) => {
+  //     return new Date (value) <= new Date();
+  //   })
+  //   .transform((value) => {
+  //     // Verifica se a string pode ser convertida para uma data válida
+  //     if (typeof value === 'string') {
+  //       const date = new Date(value);
+  //       const formattedDate = date.toISOString().split('T')[0];
+  //       console.log(formattedDate);
+  //       if (!isNaN(date.getTime())) {
+  //         return formattedDate; // Retorna um objeto Date
+  //       }
+  //     }
+  //     return value; // Retorna o valor original caso a data seja inválida
+  //   }),
   profession: yup.string().required("A profissão é obrigatória"),
   rg: yup.string().optional(),
   sus_card: yup.string().optional(),
