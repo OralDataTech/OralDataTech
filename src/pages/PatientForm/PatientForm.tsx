@@ -158,7 +158,7 @@ export default function PatientForm() {
           )}
         />
 
-        <Controller
+{/*         <Controller
           name="date_of_birth"
           control={control}
           render={({ field }) => (
@@ -175,7 +175,7 @@ export default function PatientForm() {
             />
           )}
         />
-
+ */}
         <Controller
           name="cpf"
           control={control}
