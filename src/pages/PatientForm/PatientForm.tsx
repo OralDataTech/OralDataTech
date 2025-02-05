@@ -45,7 +45,7 @@ export default function PatientForm() {
       name: "",
       naturalness: "",
       phone: "",
-      // date_of_birth: undefined,
+      date_of_birth: undefined,
       profession: "",
       rg: "",
       social_name: "",
