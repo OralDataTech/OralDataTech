@@ -49,8 +49,6 @@ export const PatientSchema = yup.object().shape({
         const formattedDate = date.toISOString().split('T')[0];
         console.log(formattedDate);
         if (!isNaN(date.getTime())) {
-          console.log("aaaa");
-          console.log(formattedDate);
           return formattedDate; // Retorna um objeto Date
         }
       }
