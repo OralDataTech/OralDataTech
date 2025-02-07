@@ -57,7 +57,6 @@ export default function PatientForm() {
       const patient = await getOneById(id || "");
 
       const formatted_date_of_birth = patient.date_of_birth ? new Date(patient.date_of_birth).toISOString().split('T')[0] : '';
-      // const date_date_of_birth: Date = new Date(formatted_date_of_birth);
 
       setValue("address", patient.address);
       setValue("address_city", patient.address_city);
